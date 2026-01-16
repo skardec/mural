@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Chá Rifa | Arthur Soares Batista</title>
+  <title>Mural de Recados | Chá Rifa Arthur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -20,68 +20,34 @@
       line-height: 1.6;
     }
 
-    /* ================= CAPA ================= */
+    /* CAPA */
     .header {
-      position: relative;
-      background: url("capa_arthur1.png") no-repeat center top;
+      background: url("capa_arthur.png") no-repeat center top;
       background-size: cover;
-      min-height: 360px;
+      min-height: 220px;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      padding-bottom: 25px;
+      padding-bottom: 20px;
     }
 
-    /* TÍTULO SOBRE A CAPA (SEM FUNDO) */
-    .title-overlay {
-      position: absolute;
-      top: 28px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      z-index: 10;
-      pointer-events: none;
-    }
-
-    .titulo-rifa {
-      display: block;
-      font-size: 30px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: #00cfff;
-      text-transform: uppercase;
-    }
-
-    .titulo-nome {
-      display: block;
-      font-size: 56px;
-      font-weight: 900;
-      letter-spacing: 4px;
-      color: #ffffff;
-      text-transform: uppercase;
-      text-shadow:
-        0 3px 6px rgba(0,0,0,0.6),
-        0 6px 14px rgba(0,0,0,0.45);
-    }
-
-    /* MENU */
     .menu {
       background: #2fc4bd;
-      padding: 12px 20px;
+      padding: 12px 22px;
       border-radius: 8px;
       display: flex;
       gap: 20px;
     }
 
     .menu a {
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
       font-size: 14px;
       text-transform: uppercase;
     }
 
-    /* ================= CONTEÚDO ================= */
+    /* CONTEÚDO */
     .container {
       max-width: 900px;
       margin: 40px auto;
@@ -89,60 +55,79 @@
       text-align: center;
     }
 
-    .title {
-      font-size: 28px;
+    h1 {
       color: #18b5ad;
-      margin-bottom: 20px;
+      font-size: 30px;
+      margin-bottom: 25px;
     }
 
-    .text {
-      font-size: 16px;
-      margin-bottom: 18px;
+    /* FORMULÁRIO */
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 30px;
+      max-width: 380px;
+      margin: 0 auto 40px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
     }
 
-    .buttons {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .btn {
-      background-color: #2fc4bd;
-      color: #ffffff;
-      padding: 14px 26px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
+    .card input,
+    .card textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
       font-size: 14px;
-      text-transform: uppercase;
-      transition: background 0.3s;
     }
 
-    .btn:hover {
-      background-color: #23aaa4;
+    .counter {
+      font-size: 12px;
+      color: #777;
+      text-align: right;
+      margin-bottom: 10px;
     }
 
-    /* ================= RODAPÉ ================= */
+    .card button {
+      width: 100%;
+      background: #00bfb3;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 25px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* RECADOS */
+    .recados {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .recado {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .recado strong {
+      color: #18b5ad;
+      display: block;
+      margin-bottom: 6px;
+    }
+
     footer {
       margin-top: 60px;
-      padding: 30px 20px;
-      background-color: #ffffff;
+      padding: 25px;
+      background: #ffffff;
       text-align: center;
       font-size: 14px;
       color: #777;
-    }
-
-    /* MOBILE */
-    @media (max-width: 600px) {
-      .titulo-rifa {
-        font-size: 22px;
-      }
-
-      .titulo-nome {
-        font-size: 38px;
-      }
     }
   </style>
 </head>
@@ -151,71 +136,91 @@
 
   <!-- CAPA -->
   <header class="header">
-
-    <!-- TÍTULO -->
-    <div class="title-overlay">
-      <span class="titulo-rifa">CHÁ DE RIFA</span>
-      <span class="titulo-nome">ARTHUR</span>
-    </div>
-
-    <!-- MENU -->
     <nav class="menu">
-      <a href="https://skardec.github.io/arthur_world/" target="_self">Home</a>
-      <a href="https://skardec.github.io/vendas_rifa/" target="_self">Lista de Presentes</a>
-      <a href="https://skardec.github.io/vendas_rifa/" target="_self">Mural de Recados</a>
-      <a href="https://skardec.github.io/sobre_rifa/" target="_self">Sobre a Rifa</a>
+      <a href="https://skardec.github.io/">Home</a>
+      <a href="https://skardec.github.io/vendas_rifa/">Lista de Presentes</a>
+      <a href="https://skardec.github.io/vendas_rifa/">Mural de Recados</a>
+      <a href="https://skardec.github.io/vendas_rifa/">Sobre a Rifa</a>
     </nav>
-
   </header>
 
-  <!-- CONTEÚDO -->
   <main class="container">
-    <h1 class="title">É tempo de muita alegria!!! ✨</h1>
+    <h1>Recadinhos</h1>
 
-    <p class="text">
-      ✨Meus saudosos cumprimentos a todos!!!✨ É com muito entusiasmo que me apresento a todos vocês.
-      Eu sou o baby Árthur, e eu estou super animado pra conhecer este mundo iluminado e compartilhar
-      minhas boas vindas com vocês, que já estão aí do outro lado.
-    </p>
+    <!-- FORMULÁRIO -->
+    <div class="card">
+      <input type="text" id="nome" placeholder="nome" maxlength="50">
+      <div class="counter" id="nomeCount">0 / 50</div>
 
-    <p class="text">
-      Por isso eu, a mamãe Kênya e o Papai Sérgio fazemos questão de convidá-los a fazer parte desse
-      momento único e especial para nós, participando do meu Chá Rifa.
-    </p>
+      <input type="email" id="email" placeholder="e-mail">
 
-    <p class="text">
-      Neste espaço criado com muito amor, teremos o carinho de compartilhar com vocês alguns detalhes
-      dessa fase tão mágica e inesquecível da minha nova vida.
-    </p>
+      <textarea id="recado" rows="5" placeholder="recado" maxlength="500"></textarea>
+      <div class="counter" id="recadoCount">0 / 500</div>
 
-    <p class="text">
-      Para participar dessa nossa primeira interação com o mundo e ainda concorrer a um prêmio que eu
-      mesmo terei a honra de entregar ao ganhador, basta me presentear! 🎁✨
-    </p>
-
-    <p class="text">
-      <strong>É muito simples:</strong><br><br>
-      1️⃣ Acesse a lista de presentes<br>
-      2️⃣ Escolha o que desejar<br>
-      3️⃣ Receba seus números da sorte diretamente no e-mail<br><br>
-      Agora vamos só aguardar o dia do sorteio! 🎉
-    </p>
-
-    <p class="text">
-      Ah, deixe pra mim baby Árthur aquele recadinho carinhoso no nosso mural.
-      Cada mensagem vai aquecer ainda mais os nossos corações. 🥰
-    </p>
-
-    <div class="buttons">
-      <a class="btn" href="">Ver Lista de Presentes</a>
-      <a class="btn" href="">Mural de Recados</a>
-      <a class="btn" href="">Sobre a Rifa</a>
+      <button onclick="enviarRecado()">enviar</button>
     </div>
+
+    <!-- LISTA DE RECADOS -->
+    <div class="recados" id="listaRecados"></div>
   </main>
 
   <footer>
-    © Chá Rifa do Arthur Soares Batista • Feito com amor 💙
+    © Chá Rifa do Arthur Soares Batista • Obrigado pelo carinho 💙
   </footer>
+
+  <script>
+    const nomeInput = document.getElementById("nome");
+    const recadoInput = document.getElementById("recado");
+
+    nomeInput.addEventListener("input", () => {
+      document.getElementById("nomeCount").innerText =
+        nomeInput.value.length + " / 50";
+    });
+
+    recadoInput.addEventListener("input", () => {
+      document.getElementById("recadoCount").innerText =
+        recadoInput.value.length + " / 500";
+    });
+
+    function enviarRecado() {
+      const nome = nomeInput.value.trim();
+      const email = document.getElementById("email").value.trim();
+      const recado = recadoInput.value.trim();
+
+      if (!nome || !recado) {
+        alert("Por favor, preencha o nome e o recado.");
+        return;
+      }
+
+      const novoRecado = { nome, email, recado };
+      const recados = JSON.parse(localStorage.getItem("recados")) || [];
+      recados.unshift(novoRecado);
+      localStorage.setItem("recados", JSON.stringify(recados));
+
+      nomeInput.value = "";
+      recadoInput.value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("nomeCount").innerText = "0 / 50";
+      document.getElementById("recadoCount").innerText = "0 / 500";
+
+      carregarRecados();
+    }
+
+    function carregarRecados() {
+      const lista = document.getElementById("listaRecados");
+      const recados = JSON.parse(localStorage.getItem("recados")) || [];
+      lista.innerHTML = "";
+
+      recados.forEach(r => {
+        const div = document.createElement("div");
+        div.className = "recado";
+        div.innerHTML = `<strong>${r.nome}</strong>${r.recado}`;
+        lista.appendChild(div);
+      });
+    }
+
+    carregarRecados();
+  </script>
 
 </body>
 </html>
